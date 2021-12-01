@@ -39,7 +39,8 @@ function Navbar (props){
             </li>
           </ul>
           <form className="d-flex" onSubmit={onTrigger}>
-            <input className="form-control me-2" type="search" name="wordInput" placeholder="Search" value={wordInput} onChange={(e) => setWordInput(e.target.value)} aria-label="Search"/>
+            <input className="form-control me-2" type="search" name="wordInput" placeholder="Search" value={wordInput}
+             onChange={(e) => setWordInput(e.target.value)} aria-label="Search" autoComplete="off"/>
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
